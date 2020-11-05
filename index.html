@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <h1>GLOBAL SOLUTION SAS</h1>
+    <input id="inputtarea" type="text" placeholder="Descripción de la tarea">
+    <button id="botontarea">Nueva tarea</button>
+    <div id="contenedortodos">
+
+
+        <div id="divtodo">
+            <h2>To do</h2>
+            <div id="Contenedortodo"></div>
+        </div>
+
+        <div id="divdoing">
+            <h2>Doing</h2>
+            <div id="Contenedordoing"></div>
+        </div>
+
+        <div id="divdone">
+            <h2>Done</h2>
+            <div id="Contenedordone"></div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCFZO1Dg0E3G9ovnez0zdeWuOr-VgnyZFg",
+        authDomain: "quiz-diana-giraldo.firebaseapp.com",
+        databaseURL: "https://quiz-diana-giraldo.firebaseio.com",
+        projectId: "quiz-diana-giraldo",
+        storageBucket: "quiz-diana-giraldo.appspot.com",
+        messagingSenderId: "116172415290",
+        appId: "1:116172415290:web:bd8625d8d7587e9d207003"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/Tareas.js"></script>
+<script src="js/index.js"></script>
